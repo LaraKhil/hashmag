@@ -55,6 +55,10 @@ header .row {
  text-decoration:none;
  
 }
+.main-menu a:hover,
+.main-menu a:focus{
+ color: #C1ff12;
+}
 /* .main-menu li:first-child a{
  border-top:1px solid black;
 } */
@@ -96,6 +100,57 @@ header .row {
  width:100%;
  height:100%;
  z-index:996;
- background: rgba(0,0,0, 0.30);
+ background: rgba(126, 125, 125, 0.3);
  cursor:default;
+}
+.social-media li {
+ display:inline-block;
+}
+/* Desktop behavior */
+@media (min-width:800px){
+ header{
+  border:none;
+  margin:0;
+  display: flex;
+  justify-content: space-between;
+ }
+ nav{
+  padding:0.3rem 0;
+  
+ }
+ /* hiding fa-bars and fa-times */
+ .menu-toggle,
+ .main-menu .manu-close {
+  display:none;
+ }
+ .main-menu{
+  background:white;
+  position: static;
+  display:block;
+ }
+ .main-menu ul{
+  padding:0;
+  height:auto;
+  width:auto;
+  background:none;
+  overflow: hidden;
+  text-align: center;
+ }
+ .main-menu li {
+  display: inline-block;
+ }
+ .main-menu  a{
+  color:black;
+  display: inline;
+
+ }
+ .social-media li{
+  display: none;
+ }
+ /* added divider after each li */
+ .main-menu li::after {
+  content: " || ";
+ }
+
+
 }
