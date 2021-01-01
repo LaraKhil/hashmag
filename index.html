@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Hush Magazine</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+</head>
+<body>
+ <header>
+ <div class="row">
+  <a href="#main-menu" id="main-menu-toggle" class="menu-toggle " aria-label="Open main menu">
+   <!-- sr-only = screen readers only -->
+   <span class="sr-only">Open main menu</span>
+   <!-- aria-hidden removes the entire ellement with childs from an accessibility tree (will not read by screen readers) -->
+   <span><i class="fas fa-bars" aria-hidden="true"></i></span>
+  </a>
+  <div class="page-title">
+   <h1>Hush</h1>
+  </div>
+ </div>
+ <!-- Nav bar section -->
+ <nav id="main-menu" class="main-menu" aria-label="Main menu">
+  <a href="#main-menu-toggle" id="main-menu-close" class="manu-close" aria-hidden="true">
+   <span class="sr-only">Close main menu</span>
+   <span class="fas fa-times" aria-hidden="true"> </span>
+  </a>
+  
+  <ul>
+   <li><a href="#latest">Latest</a></li>
+   <li><a href="#fasion">Fasion</a></li>
+   <li><a href="#music">Music</a></li>
+   <li><a href="#movie">Movie and TV</a></li>
+   <li><a href="#stories">Stories</a></li>
+   <li><a href="#art">Art</a></li>
+   <li><a href="#people">People</a></li>
+  </ul>
+  <ul class="social-media"> 
+   <li><a href="https://www.instagram.com"><i class="fab fa-instagram" target="_blank"></i></a></li>
+   <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+   </li>
+   <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+   <li><a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+  </ul>
+ </nav>
+ <a href="#main-menu-toogle" class="backdrop" tabindex="-1" hidden></a>
+ </header>
+ <!-- main section -->
+ 
+</body>
+</html>
